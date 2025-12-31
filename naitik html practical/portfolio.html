@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naitik Kumar Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Styled Name */
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #333;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 60px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-bar {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-bar li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #555;
+      transition: all 0.3s ease;
+    }
+
+    .nav-bar li a:hover {
+      font-weight: bold;
+      color: #000;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* About Me Section */
+    #about {
+      text-align: center;
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid #333;
+      margin-bottom: 20px;
+    }
+
+    /* Skills Section */
+    #skills {
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .skill {
+      display: inline-block;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .skill img {
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin: auto;
+    }
+
+    /* Projects Section */
+    #projects {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    /* Recommendations Section */
+    #recommendations {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    #rec-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    #rec-list li {
+      margin-bottom: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #rec-form {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #rec-input {
+      padding: 8px;
+      width: 250px;
+      font-size: 16px;
+    }
+
+    #rec-form button {
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Home Icon */
+    .home-icon {
+      font-size: 24px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Styled Name -->
+  <h1 class="logo">Naitik Kumar</h1>
+
+  <!-- Home Icon -->
+  <a href="#about" class="home-icon">🏠</a>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Project Details</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <img src="C:\Users\RICHA\Downloads\WhatsApp Image 2025-12-02 at 12.13.01 AM.jpeg" alt="Naitik Kumar" class="profile-img">
+    <h2>Naitik Kumar</h2>
+    <p>Hello! I am Naitik Kumar, a passionate web developer learning new technologies and building exciting projects.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <img src="html-logo.png" alt="HTML">
+      <p>HTML</p>
+    </div>
+    <div class="skill">
+      <img src="css-logo.png" alt="CSS">
+      <p>CSS</p>
+    </div>
+    <div class="skill">
+      <img src="js-logo.png" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>A web app that shows real-time weather information using API.</p>
+    </div>
+    <div class="project">
+      <h3>Todo List</h3>
+      <p>Task manager app with add, delete, and update features.</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Site</h3>
+      <p>My personal website showcasing skills and projects.</p>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <ul id="rec-list">
+      <li>John Doe: "Naitik is an excellent coder!"</li>
+      <li>Jane Smith: "Highly creative and hardworking."</li>
+      <li>Mike Johnson: "Great team player and problem solver."</li>
+    </ul>
+
+    <form id="rec-form">
+      <input type="text" id="rec-input" placeholder="Add a recommendation">
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script>
+    // Add new recommendations
+    const form = document.getElementById('rec-form');
+    const recList = document.getElementById('rec-list');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = document.getElementById('rec-input');
+      if (input.value.trim() !== "") {
+        const li = document.createElement('li');
+        li.textContent = input.value;
+        recList.appendChild(li);
+        alert("Recommendation added successfully!");
+        input.value = "";
+      }
+    });
+  </script>
+
+</body>
+</html>
