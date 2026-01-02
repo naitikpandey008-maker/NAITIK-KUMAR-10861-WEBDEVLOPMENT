@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Manipulation Demo</title>
+</head>
+
+<body>
+    <h1 id="title">Original Title</h1>
+    <p class="message">This is the first message.</p>
+    <div id="output">Nothing here yet...</div>
+    <button onclick="var heading = document.getElementById('title');
+    heading.innerHTML = 'Title changed using getElementById()';
+    var para = document.querySelector('.message');
+    para.innerHTML = 'Paragraph changed using querySelector()';
+    document.getElementById('output').innerHTML = '<b>New content added!</b>';">
+        Click Me
+    </button>
+</body>
+
+</html>

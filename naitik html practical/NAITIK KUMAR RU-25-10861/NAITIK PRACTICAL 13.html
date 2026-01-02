@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Functions and Scope Demo</title>
+</head>
+
+<body>
+    <h2>JavaScript Function & Scope Demo</h2>
+    <button onclick="sayHello()">Say Hello</button>
+    <button onclick="scopeDemo()">Scope Demo</button>
+    <p id="output"></p>
+    <script>
+        function sayHello() {
+            alert("Hello! This is a user-defined function.");
+        }
+        function scopeDemo() {
+            var x = 10;
+            let y = 20;
+            const z = 30;
+
+            let message = "Outside block: x=" + x + ", y=" + y + ", z=" + z + "\n";
+            {
+                var x = 100;
+                let y = 200;
+                const z = 300;
+                message += "Inside block: x=" + x + ", y=" + y + ", z=" + z + "\n";
+            }
+            message += "After block: x=" + x + ", y=" + y + ", z=" + z;
+            document.write("<pre>" + message + "</pre>");
+        }
+    </script>
+</body>
+
+</html>

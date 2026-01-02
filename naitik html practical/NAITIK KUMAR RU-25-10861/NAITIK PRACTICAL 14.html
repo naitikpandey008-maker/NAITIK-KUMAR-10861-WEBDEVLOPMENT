@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Form Validation</title>
+</head>
+
+<body>
+    <fieldset name="REGISTRATION FORM">
+        <LEGEND>REGISTRATION FORM</LEGEND>
+        <form name="myForm" onsubmit="var user = myForm.username.value;var pass = myForm.password.value;
+    if(user=='' || pass==''){
+      alert('All fields must be filled!');
+      return false;}
+    if(user.length < 3){
+      alert('Username must be at least 3 characters!');
+      return false;}
+    if(pass.length < 5){
+      alert('Password must be at least 5 characters!');
+      return false;}
+    alert('Form submitted successfully!');
+    return true;">
+            <label>Username:</label>
+            <input type="text" name="username" oninput="
+    if(username.value.length < 3){
+    alert('Username must be at least 3 characters!');}">
+            <br><br>
+            <label>Password:</label>
+            <input type="password" name="password">
+            <br><br>
+            <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+</body>
+
+</html>

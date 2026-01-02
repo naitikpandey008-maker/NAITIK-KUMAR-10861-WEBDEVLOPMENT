@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Web Page</title>
+<style>
+/* ===== Base (Mobile First) ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, aqua, rgb(224, 150, 116));
+  color: white;
+}
+header {
+  text-align: center;
+  padding: 2em 1em;
+  background: rgba(0, 0, 0, 0.2);
+}
+h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+.tagline {
+  font-style: italic;
+  font-size: 1em;
+  color: #ffeb3b;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1.5em;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  font-size: 1em;
+}
+/* ===== Responsive for Tablets ===== */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 45%;
+  }
+}
+/* ===== Responsive for Desktops ===== */
+@media (min-width: 992px) {
+  .card {
+    width: 28%;
+    font-size: 1.1em;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Responsive Web Design</h1>
+  <p class="tagline">"Design Once, Fit Everywhere!"</p>
+</header>
+<section class="container">
+  <div class="card">
+    <h3>Mobile First</h3>
+    <p>Start designing for smaller screens, then enhance for larger ones.</p>
+  </div>
+  <div class="card">
+    <h3>⚙ Flexible Units</h3>
+    <p>Use %, em, rem, vw, and vh for smooth resizing.</p>
+  </div>
+  <div class="card">
+    <h3>Media Queries</h3>
+    <p>Apply different styles for tablets and desktops easily.</p>
+  </div>
+</section>
+</body>
+</html>

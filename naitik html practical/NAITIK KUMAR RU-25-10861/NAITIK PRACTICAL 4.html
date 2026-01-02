@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body style="font-family: Arial; background-color: lightpink">
+
+    <header>
+        <h1 style="text-align:center; color:darkblue;">Student Registration Form</h1>
+        <hr>
+    </header>
+
+    <section>
+        <article style="background:white; width:60%; margin:auto; padding:20px; border-radius:10px; box-shadow:0 0 10px gray;">
+            <form>
+
+                <!-- Text Inputs -->
+                <label>Full Name:</label><br>
+                <input type="text" name="fullname" placeholder="Enter your name" required><br><br>
+
+                <label>Email ID:</label><br>
+                <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <!-- Radio Buttons -->
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other<br><br>
+
+                <!-- Checkboxes -->
+                <label>Languages Known:</label><br>
+                <input type="checkbox" name="lang" value="HTML"> HTML
+                <input type="checkbox" name="lang" value="CSS"> CSS
+                <input type="checkbox" name="lang" value="Python"> Python
+                <input type="checkbox" name="lang" value="C"> C Language<br><br>
+
+                <!-- Select Menu -->
+                <label>Department:</label><br>
+                <select name="department">
+                    <option value="">--Select--</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="ME">Mechanical</option>
+                    <option value="CE">Civil</option>
+                </select><br><br>
+
+                <!-- Buttons -->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </article>
+    </section>
+
+    <footer style="text-align:center; margin-top:20px;">
+        <p>&copy; 2025 Rungta College | Designed by Prince Raj</p>
+    </footer>
+
+</body>
+</html>

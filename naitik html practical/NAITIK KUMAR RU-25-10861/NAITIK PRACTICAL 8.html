@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Web Page</title>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(228, 224, 118);
+}header {
+  background-color:rgb(242, 141, 141);
+  color: rgb(13, 13, 13);
+  text-align: center;
+  padding: 1.5em;
+}h1 {
+  margin: 0;}
+.tagline {
+  font-style: italic;
+  color: white;
+  font-size: 1em;}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;}
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5em;
+  margin: 1em 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+/* Responsive Design: Larger screens */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-around;}
+  .card {
+    width: 25%;}}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Web Design</h1>
+    <p class="tagline">"Design once, fit everywhere!"</p>
+  </header>
+  <section class="container">
+    <div class="card">
+      <h3>Mobile First</h3>
+      <p>Design starts with mobile view, then expanded using media queries.</p>
+    </div>
+    <div class="card">
+      <h3>Flexible Units</h3>
+      <p>Use relative units like %, em, rem, vh, vw for adaptability.</p>
+    </div>
+    <div class="card">
+      <h3>Media Queries</h3>
+      <p>Change layout or color for different screen widths.</p>
+    </div>
+  </section>
+</body>
+</html>

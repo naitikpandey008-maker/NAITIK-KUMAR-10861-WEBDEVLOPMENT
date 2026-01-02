@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Show/Hide and Toggle Classes</title>
+  <style>
+    .hidden {
+      display: none;
+      /* hides the element */
+    }
+
+    .highlight {
+      color: red;
+      /* makes text red */
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="myText">Hello, I am visible text!</p>
+  <button onclick="
+    var text = document.getElementById('myText');
+    if(text.className.indexOf('hidden') === -1){
+      text.className += ' hidden';   
+    } else {
+      text.className = text.className.replace('hidden','');
+    }
+    ">
+    Show/Hide Text
+  </button>
+
+  <button onclick="
+    var text = document.getElementById('myText');
+    if(text.className.indexOf('highlight') === -1){
+      text.className += ' highlight';   
+    } else 
+      text.className = text.className.replace('highlight','');  ">
+    Toggle Highlight
+  </button>
+</body>
+
+</html>
